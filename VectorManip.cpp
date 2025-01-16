@@ -12,7 +12,6 @@ void handle_smallest(const vector<int> &vec);
 void handle_largest(const vector<int> &vec);
 void handle_search(const vector<int> &vec);
 void handle_clear(vector<int> &vec);
-void handle_duplicate(vector<int> &vec);
 void handle_quit();
 void handle_unknown();
 
@@ -72,7 +71,6 @@ void display_options() {
     cout << "L - Display the largest number" << endl;
     cout << "F - Find a number and its frequency" << endl;
     cout << "C - Clear out list of numbers" << endl;
-    cout << "D - Remove duplicate entries" << endl;
     cout << "Q - Quit" << endl;
     cout << endl;
     cout << "Enter your choice: ";
@@ -149,12 +147,6 @@ void handle_search(const vector<int> &vec) {
 void handle_clear(vector<int> &vec) {
     vec.clear();
     cout << "List successfully cleared" << endl;
-}
-
-void handle_duplicate(vector<int> &vec) {
-    for(size_t i{}; i < vec.size(); i++) {
-        
-    }
 }
 
 void handle_quit() {
